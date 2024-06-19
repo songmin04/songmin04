@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>카페 소개6</title>
+    <style>
+        #title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 100px;
+                margin-top: 100px;
+            }
+        }
+        @font-face {
+            font-family: 'DX시인과나Bold';
+            src: url(DX시인과나Bold.ttf);
+        }
+        @font-face {
+            font-family: 'DX어린이명조Medium';
+            src: url(DX어린이명조Medium.ttf);
+        }
+        h1 {
+            font-family: 'DX시인과나Bold';
+            font-weight: bold;
+            font-size: 50px;
+            text-align: center;
+            padding-bottom: 100px;
+        }
+        #content {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            gap: 20px;
+        }
+        #list {
+            float: left;
+            margin-left: 100px;
+            h2 {
+                font-family: 'DX어린이명조Medium';
+                font-weight: bolder;
+            }
+            h3 {
+                font-family: 'DX어린이명조Medium';
+                font-weight: bold;
+                cursor: pointer;
+            }
+            border: 1px solid black;
+            border-radius: 10px 10px;
+            padding-left: 15px;
+            ul {
+                display: none;
+            }
+            li {
+                list-style-type: '└ ';
+                margin-top: -20px;
+                margin-bottom: -20px;
+                line-height: 40px;
+            }
+            a {
+                font-family: 'DX어린이명조Medium';
+                text-decoration: none;
+                color: black;
+            }
+        }
+        #content {
+            font-family: 'DX어린이명조Medium';
+        }
+        #post h3 {
+            margin-left: 10px;
+        }
+        #int1 {
+            margin-left: 10px;
+        }
+        #int1 img {
+            float: left;
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        #int1 a {
+            color: black;
+        }
+        #int2 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-right: 100px;
+            .card {
+                border: 1px solid black;
+                border-radius: 10px 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 20px;
+                padding-bottom: 30px;
+            }
+            .img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            img {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+            }
+            p {
+                font-family: 'DX어린이명조Medium';
+                text-align: center;
+                margin-top: -10px;
+                margin-bottom: -10px;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+        #post #button-more2 {
+            margin-left: 10px;
+        }
+        #foot {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+            height: 100px;
+        }
+        #search {
+            font-size: 30px;
+            width: 600px;
+            height: 50px;
+            box-sizing: border-box;
+        }
+        #button-search {
+            font-size: 20px;
+            padding: 0px 20px;
+            height: 50px;
+            box-sizing: border-box;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="title">
+        <img src="main.png" id="icon">
+    </div>
+    <h1>나만의 카페 리스트</h1>
+
+    <div id="content">
+        <aside id="list">
+            <form>
+                <h2>
+                    <a href="final.html">카페 목록</a>
+                </h2>
+                <h3 onclick="List('cafe1-list')">※ 공덕로스터리</h3>
+                <ul id="cafe1-list">
+                    <li>
+                        <a href="introduce-1.html">소개</a>
+                    </li>
+                    <li>
+                        <a href="place1.html">위치</a>
+                    </li>
+                    <li>
+                        <a href="menu1.html">메뉴</a>
+                    </li>
+                </ul>
+                <h3 onclick="List('cafe2-list')">※ 다람제과</h3>
+                <ul id="cafe2-list">
+                    <li>
+                        <a href="introduce-2.html">소개</a>
+                    </li>
+                    <li>
+                        <a href="place2.html">위치</a>
+                    </li>
+                    <li>
+                        <a href="menu2.html">메뉴</a>
+                    </li>
+                </ul>
+                <h3 onclick="List('cafe3-list')">※ 단고당</h3>
+                <ul id="cafe3-list">
+                    <li>
+                        <a href="introduce-3.html">소개</a>
+                    </li>
+                    <li>
+                        <a href="place3.html">위치</a>
+                    </li>
+                    <li>
+                        <a href="menu3.html">메뉴</a>
+                    </li>
+                </ul>
+                <h3 onclick="List('cafe4-list')">※ 비파티셰리</h3>
+                <ul id="cafe4-list">
+                    <li>
+                        <a href="introduce-4.html">소개</a>
+                    </li>
+                    <li>
+                        <a href="place4.html">위치</a>
+                    </li>
+                    <li>
+                        <a href="menu4.html">메뉴</a>
+                    </li>
+                </ul>
+                <h3 onclick="List('cafe5-list')">※ 뺑스톡</h3>
+                <ul id="cafe5-list">
+                    <li>
+                        <a href="introduce-5.html">소개</a>
+                    </li>
+                    <li>
+                        <a href="place5.html">위치</a>
+                    </li>
+                    <li>
+                        <a href="menu5.html">메뉴</a>
+                    </li>
+                </ul>
+                <h3 onclick="List('cafe6-list')">※ 을의커피</h3>
+                <ul id="cafe6-list">
+                    <li>
+                        <a href="introduce-6.html">소개</a>
+                    </li>
+                    <li>
+                        <a href="place6.html">위치</a>
+                    </li>
+                    <li>
+                        <a href="menu6.html">메뉴</a>
+                    </li>
+                </ul>
+                <h3 onclick="List('cafe7-list')">※ 카스테라연구소</h3>
+                <ul id="cafe7-list">
+                    <li>
+                        <a href="introduce-7.html">소개</a>
+                    </li>
+                    <li>
+                        <a href="place7.html">위치</a>
+                    </li>
+                    <li>
+                        <a href="menu7.html">메뉴</a>
+                    </li>
+                </ul>
+                <h3 onclick="List('cafe8-list')">※ 카페무네</h3>
+                <ul id="cafe8-list">
+                    <li>
+                        <a href="introduce-8.html">소개</a>
+                    </li>
+                    <li>
+                        <a href="place8.html">위치</a>
+                    </li>
+                    <li>
+                        <a href="menu8.html">메뉴</a>
+                    </li>
+                </ul>
+                <h3 onclick="List('cafe9-list')">※ 킷테</h3>
+                <ul id="cafe9-list">
+                    <li>
+                        <a href="introduce-9.html">소개</a>
+                    </li>
+                    <li>
+                        <a href="place9.html">위치</a>
+                    </li>
+                    <li>
+                        <a href="menu9.html">메뉴</a>
+                    </li>
+                </ul>
+                <h3 onclick="List('cafe10-list')">※ 포멜로빈</h3>
+                <ul id="cafe10-list">
+                    <li>
+                        <a href="introduce-10.html">소개</a>
+                    </li>
+                    <li>
+                        <a href="place10.html">위치</a>
+                    </li>
+                    <li>
+                        <a href="menu10.html">메뉴</a>
+                    </li>
+                </ul>
+                <h3 onclick="List('cafe11-list')">※ 프릳츠</h3>
+                <ul id="cafe11-list">
+                    <li>
+                        <a href="introduce-11.html">소개</a>
+                    </li>
+                    <li>
+                        <a href="place11.html">위치</a>
+                    </li>
+                    <li>
+                        <a href="menu11.html">메뉴</a>
+                    </li>
+                </ul>
+            </form>
+        </aside>
+
+        <section id="post"> 
+            <article>
+                <div id="int1">
+                    <h2>을의커피</h2>
+                    <img src="cafe6-2.jpeg">
+                    <h3>운영시간</h3>
+                    <p><b>매일&nbsp;&nbsp;&nbsp;</b>11:00-22:00</p><br>
+                    <h3>연락처</h3>
+                    <p>02-701-0116</p><br>
+                    <h3>위치</h3>
+                    <p>서울 용산구 청파로47나길 13 1층</p>
+                    <button type="button" id="button-more1">더보기</button><br>
+                </div><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h3>추천/대표 메뉴</h3>
+                <div id="int2">
+                    <div class="card">
+                        <div class="img">
+                            <figure>
+                                <img src="cafe6-3.JPG">
+                            </figure>
+                        </div>
+                        <header>
+                            <p>녹차비엔나</p>
+                        </header>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <figure>
+                                <img src="cafe6-4.JPG">
+                            </figure>
+                        </div>
+                        <header>
+                            <p>민트비체린</p>
+                        </header>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <figure>
+                                <img src="cafe6-5.JPG">
+                            </figure>
+                        </div>
+                        <header>
+                            <p>티라미수</p>
+                        </header>
+                    </div>
+                </div>
+                <button type="button" id="button-more2">더보기</button>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <nav id="foot">
+            <div>
+                <input type="text" id="search" name="name">
+                <button type="button" id="button-search">검색</button>
+            </div>
+        </nav>
+    </footer>
+
+    <script>
+        function List(id) {
+            var list = document.getElementById(id);
+            if (list.style.display === 'none' || list.style.display === '') {
+                list.style.display = 'block';
+            } else {
+                list.style.display = 'none';
+            }
+        }
+        document.getElementById('button-more1').onclick = function() {
+            window.location.href = 'place6.html';
+        };
+        document.getElementById('button-more2').onclick = function() {
+            window.location.href = 'menu6.html';
+        };
+    </script>
+</body>
+</html>
